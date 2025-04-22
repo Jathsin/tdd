@@ -10,6 +10,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StringCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringCalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/StringCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/StringCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StringCalculatorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,10 +41,13 @@
   "keyToString": {
     "JUnit.StringCalculatorTest.executor": "Run",
     "JUnit.StringCalculatorTest.givenAStringWithOneNumberReturnThatNumber.executor": "Run",
+    "JUnit.StringCalculatorTest.givenAStringWithSeveralNumbersReturnsSum.executor": "Run",
+    "JUnit.StringCalculatorTest.givenAStringWithTwoNumbersReturnsSum.executor": "Run",
     "JUnit.StringCalculatorTest.givenAnEmptyStringWhenAddThenReturnZero.executor": "Run",
     "Maven.tdd [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.StringCalculatorTest.executor": "Run",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -50,7 +55,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.StringCalculatorTest.givenAnEmptyStringWhenAddThenReturnZero">
+  <component name="RunManager" selected="JUnit.StringCalculatorTest.givenAStringWithSeveralNumbersReturnsSum">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -80,11 +85,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCalculatorTest.givenAStringWithOneNumberReturnThatNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringCalculatorTest.givenAStringWithSeveralNumbersReturnsSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StringCalculatorTest" />
-      <option name="METHOD_NAME" value="givenAStringWithOneNumberReturnThatNumber" />
+      <option name="METHOD_NAME" value="givenAStringWithSeveralNumbersReturnsSum" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringCalculatorTest.givenAStringWithTwoNumbersReturnsSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringCalculatorTest" />
+      <option name="METHOD_NAME" value="givenAStringWithTwoNumbersReturnsSum" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -109,6 +125,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringCalculatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="tdd" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringCalculatorTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -120,9 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringCalculatorTest.givenAStringWithSeveralNumbersReturnsSum" />
+        <item itemvalue="JUnit.StringCalculatorTest.givenAStringWithTwoNumbersReturnsSum" />
         <item itemvalue="JUnit.StringCalculatorTest.givenAnEmptyStringWhenAddThenReturnZero" />
         <item itemvalue="JUnit.StringCalculatorTest" />
-        <item itemvalue="JUnit.StringCalculatorTest.givenAStringWithOneNumberReturnThatNumber" />
+        <item itemvalue="TestNG.StringCalculatorTest" />
       </list>
     </recent_temporary>
   </component>
