@@ -7,9 +7,16 @@ public class StringCalculator {
     if (!numbers.isEmpty()) {
       //Might have two numbers separated by comma
       String[] numbers_split = numbers.split(",");
-      for (int i = 0 ; i < numbers_split.length ; i++) {
-        n += Integer.parseInt(numbers_split[i]);
-      }
+      n = sumTokens(numbers_split);
+    }
+    return n;
+  }
+
+  //Auxiliar methods
+  private int sumTokens(String[] numbers_split) {
+    int n = 0;
+    for(int i = 0 ; i < numbers_split.length ; i++) {
+      n += Integer.parseInt(numbers_split[i]);
     }
     return n;
   }
