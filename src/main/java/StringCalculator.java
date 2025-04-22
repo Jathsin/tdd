@@ -1,5 +1,9 @@
 public class StringCalculator {
   int add(String numbers) {
-    return 0;
+    int n = 0;
+    if (!toString().isEmpty()) {
+      n += Integer.parseInt(numbers);
+    }
+    return n;
   }
 }
