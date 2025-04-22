@@ -5,22 +5,22 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class StringCalculatorTest {
+class StringCalculatorTest {
   private StringCalculator sc;
 
   @BeforeEach
-  public void setUp() {
+  void setUp() {
     sc = new StringCalculator();
   }
 
   @AfterEach
-  public void tearDown() {
+  void tearDown() {
     sc = null;
   }
 
   @DisplayName("If the list of numbers is empty the result is zero")
   @Test
-  public void givenAnEmptyStringWhenAddThenReturnZero() {
+  void givenAnEmptyStringWhenAddThenReturnZero() {
     // Arrange
     int expectedValue = 0 ;
 
@@ -33,7 +33,7 @@ public class StringCalculatorTest {
 
   @DisplayName("If the list of numbers has only one number it returns that number")
   @Test
-  public void givenAStringWithOneNumberReturnThatNumber() {
+  void givenAStringWithOneNumberReturnThatNumber() {
     // Arrange
     int expectedValue = 2 ;
 
@@ -46,7 +46,7 @@ public class StringCalculatorTest {
 
   @DisplayName("If the list of numbers has two numbers separated by comma it returns the sum of both")
   @Test
-  public void givenAStringWithTwoNumbersReturnsSum() {
+  void givenAStringWithTwoNumbersReturnsSum() {
     // Arrange
     int expectedValue = 5 ;
 
@@ -59,7 +59,7 @@ public class StringCalculatorTest {
 
   @DisplayName("If the list of numbers has several numbers separated by comma it returns the total sum")
   @Test
-  public void givenAStringWithSeveralNumbersReturnsSum() {
+  void givenAStringWithSeveralNumbersReturnsSum() {
     // Arrange
     int expectedValue = 8 ;
 
@@ -72,7 +72,7 @@ public class StringCalculatorTest {
 
   @DisplayName("The string has several numbers separated by commas or end of line")
   @Test
-  public void givenAStringWithSeveralNumbersSeparatedByCommasOrEndOfLine() {
+  void givenAStringWithSeveralNumbersSeparatedByCommasOrEndOfLine() {
     // Arrange
     int expectedValue = 8 ;
 
@@ -85,7 +85,7 @@ public class StringCalculatorTest {
 
   @DisplayName("The string has several numbers separated by user defined delimiter")
   @Test
-  public void givenAStringWithSeveralNumbersSeparatedByUserDefinedDelimiter() {
+  void givenAStringWithSeveralNumbersSeparatedByUserDefinedDelimiter() {
     // Arrange
     int expectedValue = 8 ;
 
@@ -98,7 +98,7 @@ public class StringCalculatorTest {
 
   @DisplayName("The string has negative numbers, the method should throw NegativeNumberException")
   @Test
-  public void givenAStringWithNegativeNumbersThrowsException() {
+  void givenAStringWithNegativeNumbersThrowsException() {
 
     Exception exception =
             assertThrows(NegativeNumberException.class, () ->
