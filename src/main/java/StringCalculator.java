@@ -2,21 +2,40 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class StringCalculator {
-  int add(String numbers) {
+  int add(String numbers) throws NegativeNumberException{
     int n = 0;
     if (!numbers.isEmpty()) {
-      //Might have two numbers separated by comma
-      String[] numbers_split = sepTokens(numbers);
-      n = sumTokens(numbers_split);
+      ArrayList<Integer> numbers_list = tokenize(numbers);
+      if (hasNegative(numbers_list)) {
+        throw new NegativeNumberException("ERROR: found negative number");
+      }
+      n = sumTokens(numbers_list);
     }
     return n;
   }
 
   //Auxiliar methods
-  private int sumTokens(String[] numbers_split) {
+  private ArrayList<Integer> tokenize(String numbers) {
+    String[] numbers_split = sepTokens(numbers);
+    ArrayList<Integer> list = new ArrayList<>();
+    for (int i = 0 ; i < numbers_split.length ; i++) {
+      list.add(Integer.parseInt(numbers_split[i]));
+    }
+    return list;
+  }
+
+  private boolean hasNegative(ArrayList<Integer> numbers_list) {
+    int i = 0;
+    while (numbers_list.get(i)>= 0 && i < numbers_list.size()) {
+      ++i;
+    }
+    return i < numbers_list.size();
+  }
+
+  private int sumTokens(ArrayList<Integer> numbers_list) {
     int n = 0;
-    for(int i = 0 ; i < numbers_split.length ; i++) {
-      n += Integer.parseInt(numbers_split[i]);
+    for(int i = 0 ; i < numbers_list.size() ; i++) {
+      n += numbers_list.get(i);
     }
     return n;
   }

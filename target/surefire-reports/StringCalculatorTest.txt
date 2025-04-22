@@ -1,4 +1,74 @@
 -------------------------------------------------------------------------------
 Test set: StringCalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s -- in StringCalculatorTest
+Tests run: 6, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.048 s <<< FAILURE! -- in StringCalculatorTest
+StringCalculatorTest.givenAStringWithSeveralNumbersReturnsSum -- Time elapsed: 0.016 s <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at StringCalculator.hasNegative(StringCalculator.java:29)
+	at StringCalculator.add(StringCalculator.java:9)
+	at StringCalculatorTest.givenAStringWithSeveralNumbersReturnsSum(StringCalculatorTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+StringCalculatorTest.givenAStringWithOneNumberReturnThatNumber -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at StringCalculator.hasNegative(StringCalculator.java:29)
+	at StringCalculator.add(StringCalculator.java:9)
+	at StringCalculatorTest.givenAStringWithOneNumberReturnThatNumber(StringCalculatorTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+StringCalculatorTest.givenAStringWithSeveralNumbersSeparatedByUserDefinedDelimiter -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at StringCalculator.hasNegative(StringCalculator.java:29)
+	at StringCalculator.add(StringCalculator.java:9)
+	at StringCalculatorTest.givenAStringWithSeveralNumbersSeparatedByUserDefinedDelimiter(StringCalculatorTest.java:92)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+StringCalculatorTest.givenAStringWithTwoNumbersReturnsSum -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at StringCalculator.hasNegative(StringCalculator.java:29)
+	at StringCalculator.add(StringCalculator.java:9)
+	at StringCalculatorTest.givenAStringWithTwoNumbersReturnsSum(StringCalculatorTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+StringCalculatorTest.givenAStringWithSeveralNumbersSeparatedByCommasOrEndOfLine -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at StringCalculator.hasNegative(StringCalculator.java:29)
+	at StringCalculator.add(StringCalculator.java:9)
+	at StringCalculatorTest.givenAStringWithSeveralNumbersSeparatedByCommasOrEndOfLine(StringCalculatorTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
