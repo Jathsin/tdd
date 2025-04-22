@@ -6,7 +6,7 @@ public class StringCalculator {
     int n = 0;
     if (!numbers.isEmpty()) {
       //Might have two numbers separated by comma
-      String[] numbers_split = numbers.split(",");
+      String[] numbers_split = sepTokens(numbers);
       n = sumTokens(numbers_split);
     }
     return n;
@@ -19,5 +19,15 @@ public class StringCalculator {
       n += Integer.parseInt(numbers_split[i]);
     }
     return n;
+  }
+
+  private String[] sepTokens(String numbers) {
+    String sep = ",|\n";
+    String[] numbers_split;
+    if (numbers.startsWith("//")) {
+      sep = String.valueOf(numbers.charAt(2));
+      numbers = numbers.substring(4);
+    }
+    return numbers.split(sep);
   }
 }

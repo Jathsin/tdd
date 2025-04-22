@@ -7,6 +7,11 @@
     <list default="true" id="26e7a6ac-22e1-4daa-8239-e50b90f8f2ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StringCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StringCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StringCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/StringCalculatorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/StringCalculatorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-StringCalculatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-StringCalculatorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StringCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StringCalculatorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +41,7 @@
     "JUnit.StringCalculatorTest.executor": "Run",
     "JUnit.StringCalculatorTest.givenAStringWithOneNumberReturnThatNumber.executor": "Run",
     "JUnit.StringCalculatorTest.givenAStringWithSeveralNumbersReturnsSum.executor": "Run",
+    "JUnit.StringCalculatorTest.givenAStringWithSeveralNumbersSeparatedByUserDefinedDelimiter.executor": "Run",
     "JUnit.StringCalculatorTest.givenAStringWithTwoNumbersReturnsSum.executor": "Run",
     "JUnit.StringCalculatorTest.givenAnEmptyStringWhenAddThenReturnZero.executor": "Run",
     "Maven.tdd [test].executor": "Run",
@@ -90,6 +96,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringCalculatorTest.givenAStringWithSeveralNumbersSeparatedByUserDefinedDelimiter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringCalculatorTest" />
+      <option name="METHOD_NAME" value="givenAStringWithSeveralNumbersSeparatedByUserDefinedDelimiter" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringCalculatorTest.givenAStringWithTwoNumbersReturnsSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,18 +136,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCalculatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="tdd" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringCalculatorTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -143,10 +148,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StringCalculatorTest.givenAStringWithSeveralNumbersReturnsSum" />
+        <item itemvalue="JUnit.StringCalculatorTest.givenAStringWithSeveralNumbersSeparatedByUserDefinedDelimiter" />
         <item itemvalue="JUnit.StringCalculatorTest.givenAStringWithTwoNumbersReturnsSum" />
         <item itemvalue="JUnit.StringCalculatorTest.givenAnEmptyStringWhenAddThenReturnZero" />
         <item itemvalue="JUnit.StringCalculatorTest" />
-        <item itemvalue="TestNG.StringCalculatorTest" />
       </list>
     </recent_temporary>
   </component>

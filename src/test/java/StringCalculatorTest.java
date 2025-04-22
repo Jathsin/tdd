@@ -68,4 +68,32 @@ public class StringCalculatorTest {
     // Assert
     assertEquals(expectedValue, actualValue);
   }
+
+  @DisplayName("The string has several numbers separated by commas or end of line")
+  @Test
+  public void givenAStringWithSeveralNumbersSeparatedByCommasOrEndOfLine() {
+    // Arrange
+    int expectedValue = 8 ;
+
+    // Act
+    int actualValue = sc.add("1,2,3\n2") ;
+
+    // Assert
+    assertEquals(expectedValue, actualValue);
+  }
+
+  @DisplayName("The string has several numbers separated by user defined delimiter")
+  @Test
+  public void givenAStringWithSeveralNumbersSeparatedByUserDefinedDelimiter() {
+    // Arrange
+    int expectedValue = 8 ;
+
+    // Act
+    int actualValue = sc.add("//;\n2;1;3;2") ;
+
+    // Assert
+    assertEquals(expectedValue, actualValue);
+  }
+
+
 }
